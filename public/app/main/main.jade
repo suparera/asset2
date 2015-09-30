@@ -1,0 +1,18 @@
+//
+   Created by suparera on 24/09/2015.
+
+.container
+  .jumbotron
+    h1 NIC Asset
+    p ยินดีต้อนรับสู่ระบบ Asset ของบริษัท นวโลหะอุตสาหกรรม จำกัด
+
+  h2
+    a(href='/app/asset/showAll') รูป Asset ทั้งหมด
+  h2 {{test}}
+  .row
+    .col-md-6
+      div(ng-include="'/app/main/featured-courses'")
+      // ตรงนี้ ส่ง String ไป มีรูปแบบใช้ double Quote คลุม Single Quote
+
+    .col-md-6
+      div(ng-include="'/app/main/new-courses'")

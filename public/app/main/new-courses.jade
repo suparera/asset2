@@ -1,0 +1,8 @@
+//
+   Created by suparera on 24/09/2015.
+
+.panel.panel-primary
+  .panel-heading.text-center Featured Courses
+  .panel-body
+    .row(ng-repeat="course in courses | orderBy:'published':true | limitTo:10 ")
+      .col-md-12 {{course.name}}
