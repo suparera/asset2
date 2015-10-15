@@ -20,7 +20,7 @@ angular.module('app').factory('mvAuth', function($http, mvIdentity, $q) {
           dfd.resolve(true);
         } else {
           // send false , show failed login
-          dfd.resolve(true);
+          dfd.resolve(false);
         }
 
       });
