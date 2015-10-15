@@ -1,0 +1,33 @@
+{
+  "name": "asset2",
+  "version": "0.0.0",
+  "homepage": "https://github.com/suparera/asset2",
+  "authors": [
+    "suparera <suparera@gmail.com>"
+  ],
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "NIC",
+    "Asset"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-resource": "~1.4.5",
+    "angular-route": "~1.4.5",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "toastr": "~2.1.2"
+  }
+}

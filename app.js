@@ -66,6 +66,12 @@ app.get('/app/*', function(req,res){
 
 app.post('/login', auth.authenticate);
 
+app.post('/logout', function(req,res,next) {
+  // logout is passport middleware function, that logout from passport
+  req.logout();
+  res.end();
+})
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   console.log("route for error handler")
@@ -73,6 +79,7 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
 
 // error handlers
 

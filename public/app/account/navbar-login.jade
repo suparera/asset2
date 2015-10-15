@@ -5,3 +5,12 @@
     .form-group
       input.form-control(placeholder='****', ng-model='password',type='password')
     button.btn.btn-primary(ng-click='signin(username, password)') Sign in
+  ul.nav.navbar-nav.navbar-right(ng-show='identity.isAuthenticated()')
+    // whenuse drop down with bootstrap, must include bootstrap.js for working properly
+    li.dropdown
+      a.dropdown-toggle(href="", data-toggle="dropdown")
+        | {{identity.currentUser.firstName+" "+identity.currentUser.lastName}}
+        b.caret
+      ul.dropdown-menu
+        li
+          a(href="", ng-click="signout()") Sign Out
